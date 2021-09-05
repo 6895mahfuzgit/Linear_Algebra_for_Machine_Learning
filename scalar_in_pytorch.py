@@ -7,7 +7,8 @@ Created on Mon Sep  6 01:44:45 2021
 
 import torch
 
-x_pt=torch.tensor(25)
+#x_pt=torch.tensor(25)
+x_pt=torch.tensor(25,dtype=torch.float16)
 print(x_pt)
 print(type(x_pt))
 
