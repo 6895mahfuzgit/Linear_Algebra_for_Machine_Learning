@@ -1,0 +1,2 @@
+Download tensorflow : https://files.pythonhosted.org/packages/af/ea/2131d2e4746b217a342ee0a2684120488ce5ffa586363e2db940810fa4bf/tensorflow-2.6.0-cp38-cp38-win_amd64.whl
+pip install tensorflow-2.6.0-cp38-cp38-win_amd64.whl
