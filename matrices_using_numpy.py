@@ -16,6 +16,7 @@ X=np.array([ [1,0],
 
 
 print(X.shape)
+print('size',X.size)
 
 #get all first row items
 print(X[:,0])

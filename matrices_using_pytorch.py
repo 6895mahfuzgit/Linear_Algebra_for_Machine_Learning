@@ -17,6 +17,8 @@ x_th=th.tensor([ [1,0],
 
 print(x_th.shape)
 
+print('size',x_th.size())
+
 #get all first row items
 print(x_th[:,0])
 
