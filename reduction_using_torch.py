@@ -44,6 +44,7 @@ print('min_row_result',min_row_result)
 min_col_result=th.min(X,axis=1);
 print('min_row_result',min_col_result)
 
+#intensor it refuse to calculate int type so give float type
 #mean
 mean_result=th.mean(X);
 print('mean_result',mean_result)
