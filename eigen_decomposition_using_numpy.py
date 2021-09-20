@@ -50,6 +50,13 @@ print(result_of_real_matrix)
 print((A==result_of_real_matrix).all())
 
 
+I=np.dot(Q,Q_T)
+print(I)
+
+I=np.dot(Q_T,Q)
+print(I)
+
+
 
 
 
