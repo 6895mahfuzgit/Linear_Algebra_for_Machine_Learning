@@ -11,10 +11,11 @@ import numpy as np
 
 
 A=np.array([
-            [4.,2],
-            [-5,-3]
+            [4.,2.],
+            [-5.,-3.]
           ])
 
+print(A)
 #V
 lambdas,V=np.linalg.eig(A) 
 #V**-1
@@ -26,5 +27,33 @@ diago_lambdas=np.diag(lambdas)
 result=np.dot(V,np.dot(diago_lambdas,inv_V))
 print(result)
 
-print(result==A)
+print((A==result).all())
+
+
+
+
+#if A is real No matrix then without using inverse we can Tanspose like
+# formula  A= Q (A_lambda(Diagonal Matrix)) Q**T
+
+A=np.array([
+            [2.,1],
+            [1.,2]
+          ])
+
+
+lambdas,Q=np.linalg.eig(A)
+A_lambda=np.diag(lambdas)
+Q_T=Q.T
+
+result_of_real_matrix=np.dot(Q,np.dot(A_lambda,Q_T))
+print(result_of_real_matrix)
+print((A==result_of_real_matrix).all())
+
+
+
+
+
+
+
+
 
