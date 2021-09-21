@@ -18,11 +18,14 @@ A=np.array([
 print(A)
 #V
 lambdas,V=np.linalg.eig(A) 
+print('lambdas',lambdas)
+print('V',V)
 #V**-1
 inv_V=np.linalg.inv(V)
 
 
 diago_lambdas=np.diag(lambdas)
+print('diago_lambdas',diago_lambdas)
 
 result=np.dot(V,np.dot(diago_lambdas,inv_V))
 print(result)
